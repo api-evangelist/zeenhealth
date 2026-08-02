@@ -1,7 +1,23 @@
 aid: zeenhealth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zeenhealth.png
 name: zeenhealth
-description: zeenhealth is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: zeenhealth is a health company surfaced as a portfolio company of Qiming Venture
+  Partners and added to the API Evangelist network as a stub for enrichment. Its public web and API
+  surface (zeenhealth.com, zeenhealth.cn, api.zeenhealth.com) is hosted on Chinese cloud infrastructure
+  (Tencent Cloud, with Feishu/Lark email) and was not reachable from the enrichment environment, so no
+  developer portal, OpenAPI, SDKs, or documentation could be harvested this pass. This profile remains
+  a lead awaiting a reachable developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/zeenhealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,13 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Health
+- Digital Health
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +41,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zeenhealth-domain-security.yml
 - type: Website
   url: https://zeenhealth.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
